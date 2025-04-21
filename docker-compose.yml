@@ -40,7 +40,7 @@ services:
       - ./target/scraping-investments-0.0.1-SNAPSHOT.jar:/app/scraping-investments.jar
     environment:
       - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
-      - KAFKA_TOPIC=scraping-topico
+      - KAFKA_TOPIC=scraping-topic
     working_dir: /app
     entrypoint: ["java", "-jar", "scraping-investments.jar"]
     ports:
