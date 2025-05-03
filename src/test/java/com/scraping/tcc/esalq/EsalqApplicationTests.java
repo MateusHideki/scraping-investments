@@ -6,8 +6,6 @@ import org.springframework.test.context.TestPropertySource;
 
 @SpringBootTest
 @TestPropertySource(properties = "spring.kafka.listener.auto-startup=false")
-
-
 class EsalqApplicationTests {
 
 	@Test

@@ -30,7 +30,7 @@ public class Controller {
     public Acao hello(@PathVariable String ticker) throws Exception {
     	logger.info("Iniciando scraping...");
     	Acao acao = scraper.recuperaValor(ticker);
-    	producer.sendMessage(acao.getTicker(), producerTopic);
+    	producer.sendMessage(acao, producerTopic);
         return acao;
     }
     

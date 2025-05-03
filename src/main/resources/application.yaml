@@ -5,13 +5,6 @@ spring:
     bootstrap-servers: kafka:9092
     topic: 
       producer: scraping-topic
-    consumer:
-      group-id: scraping-group
-      auto-offset-reset: earliest
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      enable-auto-commit: true
-      fetch-min-size: 1
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
